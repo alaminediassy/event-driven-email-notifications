@@ -1,0 +1,13 @@
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+.terraformrc
+terraform.rc
+.idea
+
+# TF vars (often contains secrets)
+*.tfvars
+*.tfvars.json
