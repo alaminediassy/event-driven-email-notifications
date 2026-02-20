@@ -17,3 +17,25 @@ output "notifications_dlq_arn" {
   description = "DLQ ARN."
   value       = aws_sqs_queue.notifications_dlq.arn
 }
+
+output "api_access_key_id" {
+  description = "API IAM access key id."
+  value       = aws_iam_access_key.api.id
+}
+
+output "api_secret_access_key" {
+  description = "API IAM secret access key."
+  value       = aws_iam_access_key.api.secret
+  sensitive   = true
+}
+
+output "worker_access_key_id" {
+  description = "Worker IAM access key id."
+  value       = aws_iam_access_key.worker.id
+}
+
+output "worker_secret_access_key" {
+  description = "Worker IAM secret access key."
+  value       = aws_iam_access_key.worker.secret
+  sensitive   = true
+}

@@ -33,3 +33,8 @@ variable "sqs_max_receive_count" {
   type        = number
   default     = 5
 }
+
+variable "ses_sender_email" {
+  description = "Email address used as sender in SES."
+  type        = string
+}

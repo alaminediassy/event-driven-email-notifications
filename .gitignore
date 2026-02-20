@@ -7,6 +7,7 @@ crash.*.log
 .terraformrc
 terraform.rc
 .idea
+.env
 
 # TF vars (often contains secrets)
 *.tfvars
